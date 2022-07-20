@@ -38,14 +38,10 @@ public class Main {
         return num;
     }
     public static String getAction() {
-        String action;
+        String action = " ";
         System.out.println("Выберите действие + - * / или введите stop для остановки");
         if (sc.hasNext()) {
             action = sc.next();
-        }
-        else {
-            System.out.println("Вы ввели какую то дичь, выберите операцию из предложенных");
-            action = getAction();
         }
         return action;
     }
