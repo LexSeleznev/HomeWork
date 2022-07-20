@@ -22,7 +22,7 @@ public class Main {
                 System.out.println(num1 + " " + action + " " + num2 + " = " + result);
             }
             else {
-                System.out.println("Введено неверное действие");
+                System.out.println("Введено неверное действие начнем сначала");
             }
         }
     }
@@ -33,6 +33,7 @@ public class Main {
             num = sc.nextDouble();
         } else {
             System.out.println("Вы ввели не число, попробуйте еще раз");
+            sc.next();
             num = getNum();
         }
         return num;
@@ -42,6 +43,11 @@ public class Main {
         System.out.println("Выберите действие + - * / или введите stop для остановки");
         if (sc.hasNext()) {
             action = sc.next();
+        }
+        else {
+            System.out.println("Ты шо дубнул с руха ? Нет такого действия");
+            sc.next();
+            action = getAction();
         }
         return action;
     }
