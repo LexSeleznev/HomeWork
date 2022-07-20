@@ -23,19 +23,14 @@ public class HomeWork4 {
 //                System.out.println("A не увеличивается");
                 break;
             }
-//            System.out.println("a= " + a);
             for (int b = 0; b <= present; b = b + apple) {
                 if (b+apple == 0){
- //                   System.out.println("B не увеличивается");
                     break;
                 }
-//                System.out.println("b= "+ b);
                 for (int c = 0; c <= present; c = c + pear) {
                     if (c+pear == 0){
-//                        System.out.println("C не увеличивается");
                         break;
                     }
-//                    System.out.println("c= " + c);
                     if (a + b + c == present) {
                         count++;
                     }
