@@ -18,17 +18,19 @@ public class HomeWork4 {
         pear = sc.nextInt();
 
         int count = 0;
-        for (int a = 0; a <= present; a = a + orange) {
-            if (a+orange == 0){
-//                System.out.println("A не увеличивается");
+        for (int a = 0; a < present; a = a + orange) {
+            if (a + orange == 0) {
+                System.out.println("Апельсин не может быть невесомым");
                 break;
             }
-            for (int b = 0; b <= present; b = b + apple) {
-                if (b+apple == 0){
+            for (int b = 0; b < present; b = b + apple) {
+                if (b + apple == 0) {
+                    System.out.println("Яблоко не может быть невесомым, попробуйте снова");
                     break;
                 }
-                for (int c = 0; c <= present; c = c + pear) {
-                    if (c+pear == 0){
+                for (int c = 0; c < present; c = c + pear) {
+                    if (c + pear == 0) {
+                        System.out.println("Груша не может быть невесомой, попробуйте снова");
                         break;
                     }
                     if (a + b + c == present) {
