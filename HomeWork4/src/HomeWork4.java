@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class HomeWork4 {
     static Scanner sc = new Scanner(System.in);
     public static void main (String[] args) {
-        int present = 0;
-        int orange = 0;
-        int apple = 0;
-        int pear = 0;
+        int present;
+        int orange;
+        int apple;
+        int pear;
         System.out.println("Введите вес подарка");
         present = getWeight();
         System.out.println("Введите вес апельсинов");
@@ -21,6 +21,7 @@ public class HomeWork4 {
                 for (int c = 0; c <= present; c = c + pear) {
                     if (a + b + c == present) {
                         count++;
+                        System.out.println("Апельсин "+a+" Яблоко "+b+" Груша "+c);
                     }
                 }
             }
