@@ -16,23 +16,22 @@ public class HomeWork4 {
         apple = sc.nextInt();
         System.out.println("Введите вес груш");
         pear = sc.nextInt();
-
+        while (orange == 0) {
+            System.out.println("Апельсин не может быть невесомым, выберите вес апельсина");
+            orange = sc.nextInt();
+        }
+        while (apple == 0) {
+            System.out.println("Яблоко не может быть невесомым, выберите вес яблока");
+            apple = sc.nextInt();
+        }
+        while (pear == 0) {
+            System.out.println("Груша не может быть невесомой, выберите вес груши");
+            pear = sc.nextInt();
+        }
         int count = 0;
         for (int a = 0; a <= present; a = a + orange) {
-            while (a + orange == 0) {
-                System.out.println("Апельсин не может быть невесомым, выберите вес апельсина");
-                orange = sc.nextInt();
-            }
             for (int b = 0; b <= present; b = b + apple) {
-                while (b + apple == 0) {
-                    System.out.println("Яблоко не может быть невесомым, выберите вес яблока");
-                    apple = sc.nextInt();
-                }
                 for (int c = 0; c <= present; c = c + pear) {
-                    if (c + pear == 0) {
-                        System.out.println("Груша не может быть невесомой, выберите вес груши");
-                        pear = sc.nextInt();
-                    }
                     if (a + b + c == present) {
                         count++;
                     }
