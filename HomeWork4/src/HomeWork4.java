@@ -18,20 +18,20 @@ public class HomeWork4 {
         pear = sc.nextInt();
 
         int count = 0;
-        for (int a = 0; a < present; a = a + orange) {
-            if (a + orange == 0) {
-                System.out.println("Апельсин не может быть невесомым");
-                break;
+        for (int a = 0; a <= present; a = a + orange) {
+            while (a + orange == 0) {
+                System.out.println("Апельсин не может быть невесомым, выберите вес апельсина");
+                orange = sc.nextInt();
             }
-            for (int b = 0; b < present; b = b + apple) {
-                if (b + apple == 0) {
-                    System.out.println("Яблоко не может быть невесомым, попробуйте снова");
-                    break;
+            for (int b = 0; b <= present; b = b + apple) {
+                while (b + apple == 0) {
+                    System.out.println("Яблоко не может быть невесомым, выберите вес яблока");
+                    apple = sc.nextInt();
                 }
-                for (int c = 0; c < present; c = c + pear) {
+                for (int c = 0; c <= present; c = c + pear) {
                     if (c + pear == 0) {
-                        System.out.println("Груша не может быть невесомой, попробуйте снова");
-                        break;
+                        System.out.println("Груша не может быть невесомой, выберите вес груши");
+                        pear = sc.nextInt();
                     }
                     if (a + b + c == present) {
                         count++;
