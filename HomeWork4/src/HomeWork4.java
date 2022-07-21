@@ -28,6 +28,10 @@ public class HomeWork4 {
             System.out.println("Груша не может быть невесомой, выберите вес груши");
             pear = sc.nextInt();
         }
+        while (present == 0) {
+            System.out.println("Подарок не может быть невесомым, выберите вес подарка");
+            present = sc.nextInt();
+        }
         int count = 0;
         for (int a = 0; a <= present; a = a + orange) {
             for (int b = 0; b <= present; b = b + apple) {
