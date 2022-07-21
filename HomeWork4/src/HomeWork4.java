@@ -27,14 +27,13 @@ public class HomeWork4 {
         }
         System.out.println("Возможных вариантов " + count);
     }
-    public static int getWeight(int zero) {
-        zero = sc.nextInt();
-        while (zero == 0) {
+    public static int getWeight() {
+        int a = sc.nextInt();
+        while (a == 0) {
             System.out.println("Вы ввели ноль, укажите правильный вес");
-            zero = sc.nextInt();
-
+            a = sc.nextInt();
         }
-        return zero;
+        return a;
     }
 }
 
