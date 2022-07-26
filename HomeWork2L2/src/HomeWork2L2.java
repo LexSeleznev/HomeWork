@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class HomeWork2L2 {
     public static void main (String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in, "UTF-8");
         System.out.println("Введите слово");
         String word = sc.next();
         System.out.println("Введено слово " + word);
