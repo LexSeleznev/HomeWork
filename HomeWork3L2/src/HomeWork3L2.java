@@ -14,6 +14,9 @@ public class HomeWork3L2 {
                 counter2 = counter1;
                 counter1 = 1;
             }
+            if (counter1 > counter2) {
+                counter2 = counter1;
+            }
         }
         System.out.println("Максимаальная последовательность " + counter2);
     }
